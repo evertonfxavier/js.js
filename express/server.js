@@ -10,6 +10,8 @@ app.use(
   })
 );
 
+app.use(express.static(path.resolve(__dirname, "src", "public")));
+
 app.set("views", path.resolve(__dirname, "src", "views"));
 app.set("view engine", "ejs");
 
