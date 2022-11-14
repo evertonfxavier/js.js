@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 
 const routes = require("./routes");
 
@@ -8,6 +9,9 @@ app.use(
     extended: true,
   })
 );
+
+app.set("views", path.resolve(__dirname, "src", "views"));
+app.set("view engine", "ejs");
 
 app.use(routes);
 
