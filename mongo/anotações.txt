@@ -4,4 +4,14 @@ O cluster é o servidor que vou criar (free)
 Depois, escolher o provedor(google cloud, amazon, azure)
 
 URL DE CONEXAO
-mongodb+srv://verttoxavier:<password>@cursojs01.cxxqwyw.mongodb.net/?retryWrites=true&w=majority
+mongodb+srv://verttoxavier:<senha>@cursojs01.cxxqwyw.mongodb.net/?retryWrites=true&w=majority
+
+Versão desktop p/ gerenciar meu DB > MongoDB compass
+
+----
+
+vou precisar de um dotenv p/ não setar minha senha de forma estática no projeto.
+
+Vou precisar do mongoose, p tratar da modelagem dos dados.
+Vou criar um esquema, onde o mongoose vai tratar esse esquema.
+npm i mongoose
