@@ -1,0 +1,7 @@
+https://www.mongodb.com/atlas/database
+
+O cluster é o servidor que vou criar (free)
+Depois, escolher o provedor(google cloud, amazon, azure)
+
+URL DE CONEXAO
+mongodb+srv://verttoxavier:<password>@cursojs01.cxxqwyw.mongodb.net/?retryWrites=true&w=majority
