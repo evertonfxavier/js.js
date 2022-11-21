@@ -25,6 +25,13 @@ const flashMessage = require("connect-flash");
 const path = require("path");
 const routes = require("./routes");
 
+//----
+const helmet = require("helmet");
+const csurf = require("csurf");
+
+app.use(helmet);
+//----
+
 app.use(
   express.urlencoded({
     extended: true,
@@ -44,7 +51,7 @@ const sessionOptions = session({
     maxAge: 1000 * 60 * 60 * 24 * 7, //quantos dias vai durar em ms
     httpOnly: true,
   },
-  store: MongoStore.create({ mongoUrl: process.env.CONNECTIONSTRING})
+  store: MongoStore.create({ mongoUrl: process.env.CONNECTIONSTRING }),
 });
 
 app.use(sessionOptions);
@@ -54,6 +61,10 @@ app.use(flashMessage());
 
 app.set("views", path.resolve(__dirname, "src", "views"));
 app.set("view engine", "ejs");
+
+//---
+app.use(csurf());
+//----
 
 app.use(routes);
 

@@ -15,3 +15,10 @@ vou precisar de um dotenv p/ não setar minha senha de forma estática no projet
 Vou precisar do mongoose, p tratar da modelagem dos dados.
 Vou criar um esquema, onde o mongoose vai tratar esse esquema.
 npm i mongoose
+
+-------
+
+https://expressjs.com/pt-br/advanced/best-practice-security.html
+
+https://www.treinaweb.com.br/blog/cross-site-request-forgery-csrf-e-abordagens-para-mitiga-lo
+
